@@ -1,8 +1,17 @@
-import { Component, Input, Output } from "@angular/core";
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 
 @Component({
   selector: "app-header",
   templateUrl: "./header.component.html",
-  styleUrl: "./header.component.scss",
+  styleUrls: ["./header.component.scss"],
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  @Input() isMenuOpened!: boolean;
+  @Output() isShowSidebar = new EventEmitter<boolean>();
+
+  public openMenu(): void {
+    this.isMenuOpened = !this.isMenuOpened;
+
+    this.isShowSidebar.emit(this.isMenuOpened);
+  }
+}

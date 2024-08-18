@@ -3,9 +3,11 @@
   (click)="showInput()"
   [ngClass]="{ 'show-search-input': isShowInput }"
 >
-  <mat-icon class="search-icon" [ngClass]="{ 'open-search': isShowInput }"
-    >search</mat-icon
-  >
+  <mat-icon
+    class="search-icon"
+    [ngClass]="{ 'open-search': isShowInput }"
+    fontIcon="search"
+  ></mat-icon>
   @if (isShowInput) {
   <input class="search-input" placeholder="Search..." />
   }
