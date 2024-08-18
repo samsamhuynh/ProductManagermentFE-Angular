@@ -55,31 +55,3 @@
 .mat-list-base .mat-list-item.ui-element {
   padding-left: 40px;
 }
-
-.circle {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: $sidebar-circle-color;
-  margin-right: 30px;
-}
-
-.project-circle {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  margin-right: 15px;
-  margin-left: 8px;
-
-  &_yellow {
-    background-color: $yellow;
-  }
-
-  &_blue {
-    background-color: $blue;
-  }
-
-  &_pink {
-    background-color: $pink;
-  }
-}
