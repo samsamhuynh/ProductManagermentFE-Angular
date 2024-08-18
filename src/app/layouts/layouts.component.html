@@ -1,7 +1,7 @@
 <app-header
   (isShowSidebar)="sidenav.toggle($event)"
   [isMenuOpened]="isShowSidebar"
-></app-header>
+/>
 
 <mat-sidenav-container class="layout">
   <mat-sidenav
@@ -12,7 +12,7 @@
     [mode]="mobileQuery.matches ? 'over' : 'side'"
     [fixedInViewport]="mobileQuery.matches"
   >
-    <app-sidebar></app-sidebar>
+    <app-sidebar />
   </mat-sidenav>
   <mat-sidenav-content class="layout-content">
     <ng-content></ng-content>

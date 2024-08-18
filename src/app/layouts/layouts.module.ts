@@ -11,9 +11,10 @@ import { MatSidenavModule } from "@angular/material/sidenav";
 import { LayoutsComponent } from "./layouts.component";
 import { HeaderModule } from "./header/header.module";
 import { SidebarComponent } from "./sidebar/sidebar.component";
+import { FooterComponent } from "./footer/footer.component";
 
 @NgModule({
-  declarations: [LayoutsComponent, SidebarComponent],
+  declarations: [LayoutsComponent, SidebarComponent, FooterComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -27,6 +28,8 @@ import { SidebarComponent } from "./sidebar/sidebar.component";
   ],
   exports: [
     LayoutsComponent,
+    SidebarComponent,
+    FooterComponent,
     MatListModule,
     MatIconModule,
     MatButtonModule,
