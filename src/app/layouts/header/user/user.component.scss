@@ -58,14 +58,11 @@
   width: 80%;
 }
 
-.user-menu {
-  &__item-title {
-    color: $light-grey;
+::ng-deep .user-menu {
+  .user-menu__item-title {
+    color: $dark-grey;
 
     &:hover {
-      color: $dark-grey;
-      background-color: $blue-white;
-
       & .user-menu-icon {
         color: #536dfe;
       }

@@ -10,7 +10,7 @@
     fontIcon="person"
   ></mat-icon>
 </button>
-<mat-menu #userMenu="matMenu" xPosition="before">
+<mat-menu #userMenu="matMenu" xPosition="before" class="user-menu">
   <div class="user-menu-title">
     <h4 class="user-menu-title__name">UserName</h4>
   </div>
@@ -39,6 +39,6 @@
     Messages
   </button>
   <div class="sign-button-wrapper">
-    <button class="sign-button" mat-stroked-button>Sign out</button>
+    <button class="sign-button" mat-raised-button>Sign out</button>
   </div>
 </mat-menu>

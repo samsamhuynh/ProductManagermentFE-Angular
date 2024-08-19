@@ -19,27 +19,21 @@
   }
 }
 
-.notification-menu {
-  &__button {
-    &:hover {
-      background-color: $blue-white;
-    }
-  }
-
-  &__icon {
-    &_yellow {
+::ng-deep .notification-menu {
+  .notification-menu__button {
+    .mat-icon.notification-menu__icon_yellow {
       color: $yellow;
     }
 
-    &_green {
+    .mat-icon.notification-menu__icon_green {
       color: $green;
     }
 
-    &_pink {
+    .mat-icon.notification-menu__icon_pink {
       color: $pink;
     }
 
-    &_blue {
+    .mat-icon.notification-menu__icon_blue {
       color: $blue;
     }
   }

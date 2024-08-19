@@ -7,6 +7,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatMenuModule } from "@angular/material/menu";
 import { MatSelectModule } from "@angular/material/select";
 import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatToolbarModule } from "@angular/material/toolbar";
 
 import { LayoutsComponent } from "./layouts.component";
 import { HeaderModule } from "./header/header.module";
@@ -24,6 +25,7 @@ import { FooterComponent } from "./footer/footer.component";
     MatMenuModule,
     MatSelectModule,
     MatSidenavModule,
+    MatToolbarModule,
     HeaderModule,
   ],
   exports: [
@@ -35,6 +37,8 @@ import { FooterComponent } from "./footer/footer.component";
     MatButtonModule,
     MatMenuModule,
     MatSelectModule,
+    MatSidenavModule,
+    MatToolbarModule,
   ],
 })
 export class LayoutsModule {}
